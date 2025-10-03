@@ -82,7 +82,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 600;
     padding: 1rem;
     padding-bottom: 0;
@@ -99,7 +99,7 @@ h2 {
 }
 
 p {
-    font-size: 10px;
+    font-size: 1rem;
     padding: 1rem 0;
     line-height: 1.5;
     font-family: 'Inter', sans-serif;
@@ -109,11 +109,12 @@ button{
     padding: 1rem;
     border: none;
     border-radius: 10px;
-    font-size: 10px;
+    font-size: 1rem;
     font-weight: bold;
     background-color: var(--blue);
     color: var(--white);
     transition: .5s ease, background-color .5s ease;
+    font-family: 'inter', sans-serif;
 }
 
 button:hover{
@@ -172,8 +173,8 @@ header .container {
 }
 
 .innovation > .container {
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
 }
 
 /* ADD FLOATING SVG LOGO BEFORE THE H1 */
@@ -257,7 +258,7 @@ nav input:hover {
 nav label{
     position: absolute;
     cursor: pointer;
-    padding: 1.rem;
+    padding: 1.5rem;
     top: 2rem;
     right: 1rem;
 }
@@ -317,6 +318,10 @@ nav input:checked ~ label:not(.steps) span:before, nav input:checked ~ label:not
     top:0;
 }
 
+.about{
+    padding-top: 15px;
+}
+
 .services > .container{
     display: grid;
     grid-template-columns: 1fr;
@@ -325,14 +330,14 @@ nav input:checked ~ label:not(.steps) span:before, nav input:checked ~ label:not
 }
 
 .services h3{
-    font-size: 15px;
+    font-size: 1.3rem;
     font-weight: 600;
     font-family: 'inter', sans-serif;
 }
 
 .services .offers{
     border-radius: 10px;
-    padding: 1.rem 1rem 0 1rem;
+    padding: 1.5rem 1rem 0 1rem;
     transition: transform 1s ease;
     background-color: var(--blue);
     color: var(--white);
@@ -367,6 +372,7 @@ nav input:checked ~ label:not(.steps) span:before, nav input:checked ~ label:not
     padding: 1rem;
     border: 1px solid var(--charcoal);
     vertical-align: middle;
+    font-family: 'inter', sans-serif;
 }
 
 .results tr:nth-of-type(3){
@@ -389,6 +395,7 @@ nav input:checked ~ label:not(.steps) span:before, nav input:checked ~ label:not
     max-width: 800px;
     padding: 1rem;
     position: relative;
+    font-family: 'inter', sans-serif;
 }
 
 /* ADD ON TRANSITION ON HEIGHT */
