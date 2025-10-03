@@ -225,6 +225,7 @@ nav ul{
     max-width: 100%;
     text-align: center;
     transition: max-height 0.5s ease-in-out;
+    font-family: 'inter', sans-serif;
 }
 
 nav h2{
@@ -404,7 +405,7 @@ nav input:checked ~ label:not(.steps) span:before, nav input:checked ~ label:not
     background: var(--charcoal);
     border-radius: 10px;
     position: relative;
-    transition: ;
+    transition: height 1s ease-out 1s;
     height: 0;
 }
 /* THIS ONE IS DONE FOR YOU */
@@ -429,6 +430,79 @@ nav input:checked ~ label:not(.steps) span:before, nav input:checked ~ label:not
 /* ADD ANIMATION ON stepUp for 1s ease-in-out forwards */
 .bar {
     animation: stepUp 1s ease-in-out forwards;
+}
+
+.contact{
+    font-family: 'inter', sans-serif;
+    background-color: var(--black);
+    color: var(--white);
+    padding: 1.5rem 0;
+}
+
+.contact form{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.contact form p{
+    padding: 0;
+}
+
+.contact form label{
+    display: block;
+}
+
+.contact form input[type=text],
+.contact form input[type=email],
+.contact form textarea{
+    box-sizing: border-box;
+    border: 3px solid var(--blue);
+    border-radius: 2px;
+    width: 100%;
+}
+
+.contact form input[type=text],
+.contact form input[type=email]{
+    height: 2.5rem;
+}
+
+.contact form textarea {
+    height: 8rem;
+}
+
+.contact form input[type=submit]{
+    width: 100%;
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: none;
+    font-family: 'inter', sans-serif;
+    border-radius: 10px;
+    color: var(--white);
+    background-color: var(--blue);
+    padding-top: 14px;
+    padding-bottom: 14px;
+    animation: slideIn 1s ease-in;
+    transition: transform .5s ease, background-color .5s ease;
+
+}
+
+.contact form input[type=submit]:hover{
+    background-color: var(--red);
+    transform: scale(1.1);
+}
+
+footer{
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer a{
+    color: var(--blue);
+    text-decoration: underline;
 }
 
 
