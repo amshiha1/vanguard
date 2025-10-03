@@ -1,6 +1,7 @@
 /* CSS BY AMIRA SHIHA */
 
 /* IMPORTED FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 /* IMPORT "INTER" FROM GOOGLE FONTS"
 
 /* CSS RESET */
@@ -63,8 +64,93 @@ table {
 }
 
 /* GLOBAL STYLES (MOBILE FIRST (SMALL) */
-
 /* MIN-WIDTH OF THE PAGE SHOULD NOT GO BELOW 400PX */
+
+body {
+    min-width: 400px;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--blue);
+    font-family: 'Inter', sans-serif;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 1rem;
+    padding-bottom: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.results h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 1rem;
+    padding-bottom: 0;
+    font-family: 'Inter', sans-serif;
+
+}
+
+p {
+    font-size: 10px;
+    padding: 1rem 0;
+    line-height: 1.5;
+    font-family: 'Inter', sans-serif;
+}
+
+button{
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 10px;
+    font-weight: bold;
+    background-color: var(--blue);
+    color: var(--white);
+    transition: .5s ease, background-color .5s ease;
+}
+
+button:hover{
+    background-color: var(--red);
+    transform: scale(1.1);
+}
+
+h2, h3, button {
+    animation: slideIn 1.5s ease-in;
+}
+
+@keyframes slideIn {
+    0%{
+        transform: translateY(-1rem);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+header{
+    background-color: var(--black);
+    padding: 2rem 0 2rem 0;
+    box-shadow: 0 3px 10px 4px var(--blue);
+    position: relative;
+    z-index: 10;
+}
+
+header .container {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: center;
+}
 
 /* ADD A DIV WITH THE CLASS OF CONTAINER TO EVERY CONTENT CONTAINER THIS IS ALLOW THE BASE ELEMENTS TO BE 100% WIDTH, BUT CONSTRAIN THE ACTUAL CONTENT TO 90% */
 .container {
@@ -74,7 +160,7 @@ table {
 }
 
 /* ADD TO "INNOVATION & INVESTMENT SECTION (Photo by Kevin Matos on Unsplash) */
- {
+.innovation{
     background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('images/vanguard-hero.jpg') no-repeat center center/cover;
     height: 80vh;
     display: grid;
@@ -82,17 +168,30 @@ table {
     text-align: center;
     padding: 1rem;
     overflow: hidden;
+    color: var(--white);
 }
 
 /* ADD FLOATING SVG LOGO BEFORE THE H1 */
- {
+header img{
     content: "";
-
     left:-.5rem;
     width: 3.75rem;
     height: 3.75rem;
     background: url('images/vanguard-logo.svg') no-repeat center/contain;
+    flex-shrink: 0;
+    animation: pulse 7s infinite ease-in-out;
+    max-width: 100%;
+}
 
+header img::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    z-index: -1;
 }
 /* THIS ONE IS DONE FOR YOU */
 #bar-chart {
